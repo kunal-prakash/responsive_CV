@@ -307,33 +307,39 @@ img{
     font-size: var(--smaller-font-size);
 }
 
-/*========== SKILLS AND LANGUAGES ==========*/
-.skills__content,
+/*========== LANGUAGES ==========*/
+
 .languages__content{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+    margin-left: var(--mb-2);
 }
 
-
-.skills__name,
 .languages__name{
-    display: flex;
     align-items: center;
-    margin-bottom: var(--mb-3);
+    list-style-type: disc; 
+    padding-left: auto; 
 }
 
-.skills__circle,
-.languages__circle{
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: var(--text-color);
-    border-radius: 50%;
-    margin-right: .75rem;
+/*========== SKILLS ==========*/
+.progress__bar{
+    width: 100%;
 }
 
-/*========== CERTIFICATES ==========*/
+.skills__name{
+    margin-bottom: var(--mb-3); 
+    align-items: center;
+    list-style-type: disc;  
+    padding-left: auto;
+}
 
+.skills__data{
+    margin-left: var(--mb-2);
+}
+
+/*========== CERTIFICATE ==========*/
+.certificate__content{
+    list-style-type: disc;
+    margin-left: var(--mb-2);
+}
 
 /*========== INTERESTS ==========*/
 .interests__container{
@@ -385,6 +391,13 @@ img{
     }
 }
 
+@media screen and (max-width: 968px) {
+    .languages__content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+}
+
 
 @media screen and (min-width: 968px) {
     body{
@@ -425,5 +438,7 @@ img{
     .home__container{
         gap:1.5rem;
     }
+
+    
 
 }
